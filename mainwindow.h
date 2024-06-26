@@ -6,6 +6,7 @@
 #include <QtCore>
 #include <QPainter>
 #include <QGeoCoordinate>
+#include <QLine>
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
