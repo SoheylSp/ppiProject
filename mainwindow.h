@@ -5,13 +5,15 @@
 #include <QtGui>
 #include <QtCore>
 #include <QPainter>
+#include "utils.h"
 #include <QGeoCoordinate>
+#include <QLine>
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    MainWindow(const QStringList& arguments ,QWidget *parent = nullptr);
     ~MainWindow();
 
 protected:
@@ -20,6 +22,7 @@ protected:
 
 private:
     QPainter painter ;
+    QStringList m_arguments ;
 
 };
 #endif // MAINWINDOW_H
